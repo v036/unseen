@@ -1,6 +1,9 @@
 {
     "home":  {
-        "title": "36 | Home",
-        "favicon": "./source/unseen.png"
+        "title": "unseen | Home",
+        "favicon": "./source/unseen.png",
+        "name": "unseen",
+        "url": "https://v036.github.io/unseen/",
+        "description": "Development but in 36's way"
     }
 }
