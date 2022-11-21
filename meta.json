@@ -3,13 +3,63 @@
         "title": "Seen | Home",
         "favicon": "/source/unseen.png",
         "name": "Seen",
-        "url": "https://seen.gq/",
+        "url": "https://v036.github.io/unseen/",
         "description": "Development but in 36's way",
         "discord": "https://discord.gg/ccztMsc4SK"
     },
     "scripts": {
         "title": "Seen | Scripts",
         "favicon": "/source/unseen.png",
-        "discord": "https://discord.gg/ccztMsc4SK"
+        "discord": "https://discord.gg/ccztMsc4SK",
+        "scripts": [
+            {
+                "name": "36",
+                "script": "loadstring(game:HttpGet('https://www.0036.ml/stayalive/main/source.lua'))()",
+                "description": "A free & powerfull Roblox script for sword fighting games.",
+                "version": 2.0,
+                "prefix": "/",
+                "features": ["Reach", "Reach Visualizer", "Auto Swing", "Stare", "Speed", "Attach"],
+                "commands": [
+                    {
+                        "name": "whitelist (username)",
+                        "description": "Adds a person to the reach whitelist."
+                    },
+                    {
+                        "name": "whitelist add (username)",
+                        "description": "Adds a person to the reach whitelist."
+                    },
+                    {
+                        "name": "whitelist radius (number)",
+                        "description": "Adds everyone in the given radius to the whitelist."
+                    },
+                    {
+                        "name": "whitelist remove (username)",
+                        "description": "Removes a person from the reach whitelist."
+                    },
+                    {
+                        "name": "whitelist clear",
+                        "description": "Removes all whitelisted users from the reach whitelist."
+                    },
+                    {
+                        "name": "whitelist on",
+                        "description": "Toggles on the whitelist"
+                    },
+                    {
+                        "name": "whitelist off",
+                        "description": "Toggles off the whitelist"
+                    }
+                ]
+            },
+            {
+                "name": "36 Hub",
+                "script": "loadstring(game:HttpGet('https://www.0036.ml/36/main/source.lua'))()",
+                "description": "A powerfull Roblox script for sword fighting games.",
+                "version": 1.5,
+                "prefix": "/",
+                "features": [],
+                "commands": []
+            }
+            
+        ]
     }
 }
