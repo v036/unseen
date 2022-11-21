@@ -4,7 +4,6 @@ const title = document.getElementById("title");
 const favicon = document.getElementById("favicon");
 const icon = document.getElementById("icon");
 const wrapper = document.getElementById("wrapper");
-const discord = document.getElementById("discord");
 const content = document.getElementById("sidebar_content");
 
 http.onload = function(context) {
@@ -14,12 +13,11 @@ http.onload = function(context) {
     
     title.innerText = current.title;
     favicon.setAttribute("href", current.favicon);
-    discord.setAttribute("href", current.discord);
-    discord.setAttribute("scr", current.discord);
+    icon.setAttribute("scr", current.icon);
 
     for (var i = 0; i < current.scripts.length; i++) {
         var script = current.scripts[i]
-        
+
         content.append(`
         <li>
             <button>${script.name}</button>
