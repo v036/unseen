@@ -1,17 +1,31 @@
 // Variables
 const http = new XMLHttpRequest();
 const title = document.getElementById("title");
-const favicon = document.getElementById("favicon")
+const favicon = document.getElementById("favicon");
+const icon = document.getElementById("icon");
 const wrapper = document.getElementById("wrapper");
 const discord = document.getElementById("discord");
+const content = document.getElementById("sidebar_content");
 
 http.onload = function(context) {
     var rawmetadata = context.target.responseText;
     const metadata = JSON.parse(rawmetadata);
+    var current = metadata.scripts
     
-    title.innerText = metadata.scripts.title;
-    favicon.setAttribute("href", metadata.scripts.favicon);
-    discord.setAttribute("href", metadata.scripts.discord)
+    title.innerText = current.title;
+    favicon.setAttribute("href", current.favicon);
+    discord.setAttribute("href", current.discord);
+    discord.setAttribute("scr", current.discord);
+
+    for (var i = 0; i < current.scripts.length; i++) {
+        var script = current.scripts[i]
+        
+        content.append(`
+        <li>
+            <button>${script.name}</button>
+        </li>
+        `)
+    }
 }
 
 http.open("GET", "/meta.json", true);

@@ -34,6 +34,7 @@ body {
     height: 100%;
     position: fixed;
     overflow-x: hidden;
+    background-color: #e0e0e0;
     display: block;
     opacity: 0;
     transition: opacity .4s linear;
@@ -58,6 +59,29 @@ body {
     height: 100%;
     max-width: 1400px;
     margin: 0 auto;
+}
+
+#sidebar {
+    background-color: #ffffff;
+    width: 280px;
+    height: 100%;
+    padding: 1rem !important;
+    flex-shrink: 0 !important;
+}
+
+.title {
+    font-size: 1.25rem !important;
+    font-weight: 600 !important;
+    color: #000;
+    padding-left: 10px;
+}
+
+#sidebarlogo {
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+    align-items: center;
+    border-bottom: 1px solid #dee2de;
+    display: flex;
 }
 
 #logo img, #logo svg {
@@ -100,7 +124,7 @@ body {
     left: 0;
     width: 100%;
     height: 2px;
-    background: #fff;
+    background: #000;
     transform: scaleX(0);
     transform-origin: right center;
     transition: transform .5s cubic-bezier(.19,1,.22,1);
@@ -112,7 +136,7 @@ body {
 }
 
 a:link, a:visited, a:active {
-    color: #fff;
+    color: #000;
     text-decoration: none;
 }
 

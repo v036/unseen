@@ -10,6 +10,7 @@
     "scripts": {
         "title": "Seen | Scripts",
         "favicon": "/source/unseen.png",
+        "icon": "/source/unseen_negative.png",
         "discord": "https://discord.gg/ccztMsc4SK",
         "scripts": [
             {
