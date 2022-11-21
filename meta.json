@@ -1,9 +1,15 @@
 {
     "home":  {
         "title": "unseen | Home",
-        "favicon": "./source/unseen.png",
+        "favicon": "/source/unseen.png",
         "name": "unseen",
         "url": "https://v036.github.io/unseen/",
-        "description": "Development but in 36's way"
+        "description": "Development but in 36's way",
+        "discord": "https://discord.gg/ccztMsc4SK"
+    },
+    "scripts": {
+        "title": "unseen | Scripts",
+        "favicon": "/source/unseen.png",
+        "discord": "https://discord.gg/ccztMsc4SK"
     }
 }
