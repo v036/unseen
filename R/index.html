@@ -26,13 +26,16 @@
         .container>.video {
             height: 100%;
             display: block;
-            margin: auto;
+            margin: 0 auto;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
         }
 
         .container>.text {
             position: absolute;
             inset: 0;
-            display:flex;
+            display: flex;
             place-items: center;
             background-color: #000;
             color: #fff;
@@ -41,7 +44,13 @@
             font-family: sans-serif;
             mix-blend-mode: multiply;
             user-select: none;
-            padding: 20% 20% 20% 20%;
+            padding: 10vh 20vw 10vh 20vw;
+        }
+
+        @media screen and (max-width: 900px) {
+            .container>.text {
+                font-size: 1.7vw;
+            }
         }
     </style>
 </head>
