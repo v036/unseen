@@ -20,3 +20,11 @@ http.send();
 setTimeout(() => {
     wrapper.setAttribute("class", "visible");
 }, 100)
+
+document.addEventListener("visibilitychange", (event) => {
+    if (document.visibilityState == "visible") {
+        wrapper.removeAttribute("class")
+    } else {
+        wrapper.setAttribute("class", "visible");
+    }
+  });
