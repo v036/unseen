@@ -19,9 +19,9 @@ http.send();
 
 document.addEventListener("visibilitychange", (event) => {
     if (document.visibilityState == "visible") {
-        wrapper.removeAttribute("class")
-    } else {
         wrapper.setAttribute("class", "visible");
+    } else {
+        wrapper.removeAttribute("class")
     }
 });
 
